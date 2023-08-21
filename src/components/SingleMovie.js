@@ -40,9 +40,12 @@ function SingleMovie() {
     
     if(isLoading){
       return <>
-        <body className='load'>
+        {/* <body className='load'>
           <div className='loading'>Loading...</div>
-        </body>
+        </body> */}
+        <div className='load-body'>
+        <div id="loading"></div>
+        </div>
       </>
     }
 

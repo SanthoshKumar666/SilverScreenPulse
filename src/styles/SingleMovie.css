@@ -9,7 +9,7 @@
     border-radius: 1rem; 
     margin-left: 25%;
     margin-right: 20%;
-    margin-top: 10%;
+    margin-top: 12%;
     margin-bottom: 10%;
     padding: 1rem;
 }
@@ -40,13 +40,13 @@
 
 .back-btn:hover{
     background-color: var(--text-clr);
-    color: aliceblue;
+    color:var(--second-txt-clr);
     box-shadow: 0 0 1rem var(--bg-clr);
 }
  
-.loading {
+/* .loading {
     background: var(--text-clr);
-    color: aliceblue;
+    color: var(--second-txt-clr);
     font-family: cinzel;
     font-weight: bold;
     font-size: 3rem;
@@ -59,7 +59,46 @@
 
 .load  {
     background-color: var(--text-clr);
+} */
+
+
+.load-body { 
+    padding-top: 25%; 
+    padding-bottom: 25%;
+    
+    background-color: var(--text-clr);
+    color: var(--second-txt-clr);
+    text-align:center;
 }
+
+#loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+
+
+@media(max-width:450px)
+{
+    .movie-card{
+        margin-top: 16%;
+    }
+    
+}
+
+
 
 @media(max-width:400px)
 {

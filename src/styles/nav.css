@@ -80,7 +80,7 @@ header .nav-btn {
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-size: var(--bs-nav-link-font-size);
     font-weight: var(--bs-nav-link-font-weight);
-    color:aliceblue;
+    color:var(--second-txt-clr);
     text-decoration: none;
     background: none;
     border: 0;
@@ -93,7 +93,11 @@ header .nav-btn {
 }
 
 nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
-    height: 5rem;
+    height: 4.8rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -118,7 +122,7 @@ nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
     font-size: var(--bs-navbar-toggler-font-size);
     line-height: 1;
-    color: aliceblue;
+    color:var(--second-txt-clr);
     background-color: transparent;
     border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
     border-radius: var(--bs-navbar-toggler-border-radius);
@@ -134,7 +138,7 @@ nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    color: aliceblue;
+    color: var(--second-txt-clr);
 }
 
 .caption {
@@ -144,9 +148,9 @@ nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
 }
 
 .navbar-brand:hover {
-    color: aliceblue;
+    color: var(--second-txt-clr);
 }
 
 .caption:hover {
-    color: aliceblue;
+    color: var(--second-txt-clr);
 }
